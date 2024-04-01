@@ -14,30 +14,32 @@ const collectEmployees = function () {
     lastName: lastname,
     salary: salary,
   }
+  employeesArray.push(employeeData)
+
+  return employeesArray
 }
+
 
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  function calculateAverage(employeesarray) {
-    var total = 0;
-    var count = 0;
+     let salarysun = 0;
+    for(let i = 0; i < employeesArray.length; i++) {
+      salarysun += employeesArray[i].salary;
+    }
+      const average= salarysun /employeesArray.length
+      console.log (`The average is ${average}`)
+    }
 
-    array.forEach(function (item, index) {
-      total += item;
-      count++;
-    });
-
-    return total / count;
-  }
-
-  console.log(calculateAverage(arry));
-  // TODO: Calculate and display the average salary
-}
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
-  console.log(employeesArray[math.floor(math.random() * employeesArray.length)]);
+const rand=Math.floor(Math.random() * employeesArray.length)
+console.log(rand);
+const r = employeesArray[rand];
+console.log (`random winner is ${r.firstName}`);
+
+
   // TODO: Select aconsole.lognd display a random employee
 }
 
