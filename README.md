@@ -1,17 +1,6 @@
 # 03 JavaScript: Employee Payroll Tracker
 
 
-## my Story
-
-```md
-AS A payroll manager
-I WANT AN employee payroll tracker
-SO THAT I can see my employees' payroll data and properly budget for the company
-```
-
-## Acceptance Criteria
-
-```md
 GIVEN an employee payroll tracker
 WHEN I click the "Add employee" button
 THEN I am presented with a series of prompts asking for first name, last name, and salary
